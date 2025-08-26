@@ -1,0 +1,115 @@
+body {
+	background-color: #000;
+	color: #fff;
+}
+
+@media (max-width: 440px) {
+	body {
+		color: yellow;
+	}
+}
+.wallpapper {
+	border: 1px solid white;
+	width: 320px;
+	display: grid;
+	grid-template-columns: repeat(3, 60px);
+	gap: 10px;
+	height: 300px;
+	margin-top: 270px;
+	margin-left: 50px;
+	border-radius: 5px;
+	color: antiquewhite;
+	background: transparent;
+	box-shadow: 0 0 10px rgb(0, 0, 0.2);
+	backdrop-filter: bulr(20px);
+}
+.wallpapper .input-text {
+	width: 186px;
+	height: 30px;
+	margin-left: 5.5px;
+	margin-top: 5px;
+	border-radius: 10px;
+	background: white;
+	grid-column: span 3;
+
+	text-align: right;
+	color: aqua;
+	border-color: rgb(220, 245, 245);
+}
+button {
+	height: 40px;
+	font-size: 18px;
+	margin-left: 5.5px;
+	border-radius: 10px;
+}
+.confirm {
+	width: 120px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.left-papper {
+	border: 1px solid white;
+	position: absolute;
+	right:68px;
+	margin-top: 5px;
+	border-radius: 5px;
+	width: 105px;
+	height: 280px;
+	background: white;
+}
+.input-text::placeholder {
+	margin-left: 7px;
+	color: pink;
+}
+@keyframes flyUp {
+	0% {
+		transform: translateX(0) translateY(0);
+		opacity: 1;
+	}
+	100% {
+		transform: translateX(-50px) translateY(-300px); /* bay lệch sang trái 1 chút */
+		opacity: 0;
+	}
+}
+.icon {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	font-size: 24px;
+	animation: flyUp 5s linear infinite;
+}
+@keyframes fly {
+	0% {
+		transform: translate(0) translateY(0);
+        opacity: 1;
+	}
+    100%{
+        transform: translateX(20px) translateY(-300px);
+        opacity: 0;
+    }
+}
+.icon1{
+    position: absolute;
+	bottom: 0;
+	left: 50%;
+	font-size: 24px;
+	animation: fly 5s linear infinite;
+}
+@keyframes flyDown{
+    0%{
+        transform: translateX(10px) translateY(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(20px) translateY(300px);
+        opacity: 0;
+    }
+}
+.icon2{
+    position: absolute;
+	top: 0;
+	left: 50%;
+	font-size: 24px;
+	animation: flyDown 5s linear infinite;
+}

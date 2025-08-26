@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Happy Birth Day</title>
+		<link rel="stylesheet" href="hpbd.css" />
+	</head>
+	<body>
+		<div class="wallpapper">
+			<div class="left-papper">
+				<span class="icon">❤️</span>
+				<span class="icon1">⭐</span>
+				<span class="icon2">🎂</span>
+			</div>
+			<input class="input-text" placeholder="Nhập ngày sinh nhật vào đây" type="" name="" id="display" />
+			<button type="button"  onclick="nhapSo('1')" id="so1" >1</button>
+			<button type="button"  onclick="nhapSo('2')" id="so2" >2</button>
+			<button type="button"  onclick="nhapSo('3')" id="so3" >3</button>
+			<button type="button"  onclick="nhapSo('4')" id="so4" >4</button>
+			<button type="button"  onclick="nhapSo('5')" id="so5" >5</button>
+			<button type="button"  onclick="nhapSo('6')" id="so6" >6</button>
+			<button type="button"  onclick="nhapSo('7')" id="so7" >7</button>
+			<button type="button"  onclick="nhapSo('8')" id="so8" >8</button>
+			<button type="button"  onclick="nhapSo('9')" id="so9" >9</button>
+			<button type="button"  onclick="nhapSo('0')" id="so0" >0</button>
+			<button  onclick="xacNhan()" class="confirm">Xác nhận nè</button>
+		</div>
+        <script>
+           function nhapSo(so) {
+        document.getElementById("display").value += so;
+    }
+
+    function xacNhan() {
+        let value = document.getElementById("display").value;
+        if (value === '24102004'){
+             window.location.href = "main.html"
+        } else {
+            alert('Đến ngày sinh còn không nhớ ?')
+        }
+    }
+        </script>
+	</body>
+</html>
