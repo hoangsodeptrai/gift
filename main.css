@@ -1,5 +1,30 @@
 @media (max-width: 440px) {
 	body {
 		color: yellow;
+		background-color: pink;
+	}
+}
+.letter {
+	border: 1px solid black;
+	width: 220px;
+	height: 220px;
+	margin-left: 110px;
+	margin-top: 310px;
+	opacity: 0;
+	border-radius: 10px;
+	animation: dropFade 10s ease-out;
+}
+@keyframes dropFade {
+	0% {
+		opacity: 0;
+		transform: translateY(-100px);
+	}
+	50% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(50px);
 	}
 }
